@@ -1,5 +1,5 @@
-FROM openjdk:25
-COPY ./target/classes/com tmp/com
+FROM openjdk:latest
+COPY ./target/SDM_Labs-1.0-SNAPSHOT-jar-with-dependencies.jar tmp/
 WORKDIR /tmp
-ENTRYPOINT ["java", "com.napier.sem.App"]
+ENTRYPOINT ["java", "-jar", "SDM_Labs-1.0-SNAPSHOT-jar-with-dependencies.jar"]
 
